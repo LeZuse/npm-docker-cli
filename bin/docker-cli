@@ -1,4 +1,4 @@
 #!/bin/sh
 docker-machine start default
 eval "$(docker-machine env default)"
-bash -c "clear && DOCKER_HOST= DOCKER_CERT_PATH=/Users/zuse/.docker/machine/machines/default DOCKER_TLS_VERIFY=1 /bin/bash"
+bash -c "clear && /bin/bash"
