@@ -8,3 +8,4 @@
 
 ## TODO
 - Allow running other vboxes other than `default`
+- Smarter prompt rewrite

@@ -1,4 +1,10 @@
-#!/bin/sh
+#!/usr/bin/env bash
+
+# Boot up VBox machine
 docker-machine start default
+
+# Inject machine env settings
 eval "$(docker-machine env default)"
-bash -c "clear && /bin/bash"
+
+# Fire up new bash with custom env & prompt
+bash -c 'clear && PS1="(docker-cli) \h:\W \u\$ " /bin/bash'
